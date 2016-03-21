@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-gyroscope",
+  "version": "0.1.0",
+  "description": "Cordova Device Gyroscope Plugin",
+  "cordova": {
+    "id": "cordova-plugin-gyroscope",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoLSN/cordova-plugin-gyroscope.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Jason Yang",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/NeoLSN/cordova-plugin-gyroscope/issues"
+  },
+  "homepage": "https://github.com/NeoLSN/cordova-plugin-gyroscope#readme"
+}
