@@ -100,7 +100,7 @@
     [orientationProps setValue:[NSNumber numberWithDouble:x] forKey:@"x"];
     [orientationProps setValue:[NSNumber numberWithDouble:y] forKey:@"y"];
     [orientationProps setValue:[NSNumber numberWithDouble:z] forKey:@"z"];
-    [accelProps setValue:[NSNumber numberWithDouble:timestamp] forKey:@"timestamp"];
+    [orientationProps setValue:[NSNumber numberWithDouble:timestamp] forKey:@"timestamp"];
 
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:orientationProps];
     [result setKeepCallback:[NSNumber numberWithBool:YES]];

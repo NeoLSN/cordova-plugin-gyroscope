@@ -221,7 +221,7 @@ public class GyroscopeListener extends CordovaPlugin implements SensorEventListe
         if (this.accuracy >= SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM) {
 
             // Save time that event was received
-            this.timestamp = System.currentTimeMillis();
+            this.timestamp = event.timestamp;
             this.x = event.values[0];
             this.y = event.values[1];
             this.z = event.values[2];
@@ -284,7 +284,7 @@ public class GyroscopeListener extends CordovaPlugin implements SensorEventListe
             r.put("x", this.x);
             r.put("y", this.y);
             r.put("z", this.z);
-            r.put("timestamp", this.timestamp);
+            r.put("timestamp", this.timestamp / 1000);
         } catch (JSONException e) {
             e.printStackTrace();
         }
