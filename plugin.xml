@@ -8,7 +8,7 @@
   <name>Device Gyroscope</name>
   <description>Cordova Device Gyroscope Plugin</description>
   <author>Jason Yang</author>
-  <license>LICENSE</license>
+  <license>BSD</license>
 
   <js-module src="www/Orientation.js" name="Orientation">
     <clobbers target="Orientation"/>

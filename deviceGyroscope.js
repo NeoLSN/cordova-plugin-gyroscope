@@ -25,7 +25,7 @@ angular
 
         if (angular.isUndefined(navigator.gyroscope) ||
           !angular.isFunction(navigator.gyroscope.watch)) {
-          q.reject('Device do not support watchAcceleration');
+          q.reject('Device do not support watchGyroscope');
         }
 
         var watchID = navigator.gyroscope.watch(function(result) {
