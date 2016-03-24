@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-gyroscope",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cordova Device Gyroscope Plugin",
   "cordova": {
     "id": "cordova-plugin-gyroscope",

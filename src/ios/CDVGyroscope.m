@@ -55,9 +55,9 @@
         [self.motionManager setGyroUpdateInterval:kAccelerometerInterval/1000];
         __weak CDVGyroscope* weakSelf = self;
         [self.motionManager startGyroUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMGyroData *gyroData, NSError *error) {
-            weakSelf.x = gyroData.rotationRate.z;
-            weakSelf.y = gyroData.rotationRate.x;
-            weakSelf.z = gyroData.rotationRate.y;
+            weakSelf.x = gyroData.rotationRate.x;
+            weakSelf.y = gyroData.rotationRate.y;
+            weakSelf.z = gyroData.rotationRate.z;
             weakSelf.timestamp = ([[NSDate date] timeIntervalSince1970] * 1000);
             [weakSelf returnGyroInfo];
         }];
