@@ -15,7 +15,7 @@ Installation
 --------
 
 ```bash
-cordova plugin add cordova-plugin-gyroscope@0.1.2
+cordova plugin add cordova-plugin-gyroscope@0.1.3
 ```
 
 Usage
